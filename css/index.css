@@ -243,9 +243,11 @@
 
 .menu .sideMenu ul li .subMenu {
     position: absolute;
+    z-index: 1;
     left: 198px;
     top: 0px;
     border: 2px solid #ff6700;
+    background-color: #fff;
     height: 426px;
     width: 426px;
     display: none;
@@ -419,27 +421,90 @@
 /* 左侧广告 */
 
 .ebooks .left-box .content .ads {
-    height: 450px;
+    height: 455px;
     width: 236px;
-    background-color: #f9f9f9;
+    background-color: #ebebeb;
+}
+
+.ebooks .left-box .content .ads .top-img {
+    width: 236px;
+    height: 290px;
+}
+
+.ebooks .left-box .content .ads .bottom-text {
+    width: 236px;
+    height: 160px;
+}
+
+.ebooks .left-box .content .ads .bottom-text ul {
+    width: 235px;
+    height: 160px;
+    margin-left: 1px;
+    margin-top: 10px;
+}
+
+.ebooks .left-box .content .ads .bottom-text ul li {
+    float: left;
+    width: 78px;
+    height: 43px;
+    text-indent: 5px;
+    font-size: 14px;
 }
 
 
 /* 右侧图书列表 */
 
 .ebooks .left-box .content .ebooks-list {
-    height: 454px;
+    height: 455px;
     width: 670px;
     background-color: #ccc;
 }
 
-.ebooks .left-box .content .ebooks-list ul li {
+.ebooks .left-box .content .ebooks-list>ul>li {
     float: left;
     height: 226px;
     width: 165px;
     background-color: #fff;
     margin-left: 2px;
     margin-bottom: 2px;
+    text-align: center;
+}
+
+.ebooks .left-box .content .ebooks-list ul>li>p {
+    margin-top: 5px;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.ebooks .left-box .content .ebooks-list>ul>li>img {
+    margin: 15px auto;
+}
+
+.ebooks .left-box .content .ebooks-list>ul>li>p:first-child {
+    font-size: 18px;
+}
+
+.ebooks .left-box .content .ebooks-list>ul>li p:last-child {
+    font-size: 18px;
+}
+
+.ebooks .left-box .content .ebooks-list>ul>li>p:not(:first-child) {
+    color: red;
+}
+
+
+/* 一个特别的li 将来的轮播容器 */
+
+.ebooks .left-box .content .ebooks-list>ul>li:first-child {
+    background-color: green;
+    height: 226px;
+    width: 332px;
+}
+
+.ebooks .left-box .content .ebooks-list>ul>li:first-child .pptbox {
+    height: 226px;
+    width: 332px;
+    background-color: pink;
 }
 
 
@@ -447,14 +512,69 @@
 
 .ebooks .right-box {
     width: 286px;
-    height: 500px;
-    background-color: deeppink;
+    height: 460px;
+    margin-top: 40px;
+    border: 2px solid #ccc;
+    /* 变成怪异盒子 */
+    box-sizing: border-box;
+}
+
+.ebooks .right-box .title {
+    text-align: center;
+    height: 50px;
+    text-indent: 50px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 200;
+}
+
+.ebooks .right-box ul li {
+    line-height: 42px;
+    font-size: 16px;
+    text-indent: 5px;
+}
+
+.ebooks .right-box ul li .desc.active {
+    display: block;
+}
+
+.ebooks .right-box ul li p:last-child {
+    line-height: 16px;
+}
+
+.ebooks .right-box ul li .desc img {
+    margin-right: 12px;
+    margin-left: 10px;
+}
+
+
+/* 新书列表交互相关样式 */
+
+.ebooks .right-box ul li .desc {
+    font-size: 16px;
+    line-height: 20px;
+    height: 150px;
+    color: #333;
+    /* 隐藏:详情默认所有都是隐藏的，只有第一个显示*/
+    display: none;
+    margin-right: 9px;
+}
+
+.ebooks .right-box ul li:first-child .eboos-title {
+    /* 默认所有标题都显示 只有第一个隐藏 */
+    display: none;
+}
+
+.right-box .right-box ul li:first-child .desc {
+    /* 默认第一个显示详情 */
+    display: block;
 }
 
 
 /*6.========服装================*/
 
 .clothes {
+    margin-top: 20px;
     height: 500px;
     background-color: green;
 }
