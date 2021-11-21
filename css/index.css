@@ -1165,24 +1165,21 @@
 /* 右侧标题 */
 
 .promotion .top ul li {
-    float: left;
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.promotion .top ul li div {
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     background-color: #ccc;
     border-radius: 50%;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 
 /* 右侧激活类 */
 
-.promotion .top ul li div.active {
+.promotion .top ul li.active {
     background-color: #ff6700;
     color: #fff;
 }
@@ -1193,15 +1190,35 @@
 .promotion .content {
     width: 1200px;
     height: 780px;
-    /* background-color: #ebebeb; */
+}
+
+
+/* 外部盒子 */
+
+.promotion .content .out-box {
+    width: 1200px;
+    height: 780px;
+    /* 超出隐藏 */
+    overflow: hidden;
+}
+
+
+/* 里面盒子 */
+
+.promotion .content .out-box .inner-box {
+    width: 2400px;
+    height: 780px;
+    /* 定位 */
+    position: relative;
+    left: 0;
 }
 
 
 /* 推广商品列表 */
 
 .promotion .content .ads {
+    width: 2400px;
     height: 780px;
-    width: 1200px;
     background-color: #fff;
 }
 
@@ -1213,6 +1230,10 @@
     margin-top: 10px;
     background-color: #fff;
     text-align: center;
+}
+
+.promotion .content .ads>ul>li:hover {
+    background-color: #f3f3f3;
 }
 
 .promotion .content .ads>ul>li>img {

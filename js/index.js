@@ -80,4 +80,15 @@ $(function() {
         controlsColor: "#d7d7d7", //普通控制按钮的颜色
         controlsCurrentColor: "#ff6600", //当前控制按钮的颜色
     });
+    /* 推广商品切换 */
+    $('.promotion .top ul li').mouseenter(function() {
+        //导航激活类的切换
+        $(this).addClass('active').siblings().removeClass('active');
+        //内容切换
+        //获取对应的索引
+        var index = $(this).index(); // 0 => left:0*1200; ,1 => left:-1*1200
+        $('.promotion .content .out-box .inner-box').animate({
+            'left': -index * 1200
+        });
+    });
 });

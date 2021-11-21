@@ -967,26 +967,86 @@
     </div>
     <!-- 10.推广商品 -->
     <div class="promotion container ">
-        <div class="promotion container ">
-            <div class="promotion container">
-                <div class="top clearfix">
-                    <!-- 标题 -->
-                    <h1 class="title fl">
-                        推广商品
-                    </h1>
-                    <ul class="fr">
-                        <li>
-                            <div class="active"></div>
-                        </li>
-                        <li>
-                            <div></div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="content clearfix">
+        <div class="top clearfix">
+            <!-- 标题 -->
+            <h1 class="title fl">
+                推广商品
+            </h1>
+            <ul class="fr">
+                <li class="active"></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="content ">
+            <div class="out-box">
+                <div class="inner-box clearfix">
                     <!-- 左侧广告 -->
                     <div class="ads fl">
-                        <ul>
+                        <!-- 1 -->
+                        <ul class="fl">
+                            <li>
+                                <img src="../../img/img/promotion-list1.jpg" alt="">
+                                <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p><img src="../../img/img/comment.jpg" alt="">&nbsp;已有<span>988</span>条评论</p>
+                            </li>
+                            <li>
+                                <img src="../../img/img/promotion-list1.jpg" alt="">
+                                <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p><img src="../../img/img/comment.jpg" alt="">&nbsp;已有<span>988</span>条评论</p>
+                            </li>
+                            <li>
+                                <img src="../../img/img/promotion-list1.jpg" alt="">
+                                <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p><img src="../../img/img/comment.jpg" alt="">&nbsp;已有<span>988</span>条评论</p>
+                            </li>
+                            <li>
+                                <img src="../../img/img/promotion-list1.jpg" alt="">
+                                <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p><img src="../../img/img/comment.jpg" alt="">&nbsp;已有<span>988</span>条评论</p>
+                            </li>
+                            <li>
+                                <img src="../../img/img/promotion-list1.jpg" alt="">
+                                <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p><img src="../../img/img/comment.jpg" alt="">&nbsp;已有<span>988</span>条评论</p>
+                            </li>
+                            <li>
+                                <img src="../../img/img/promotion-list1.jpg" alt="">
+                                <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p><img src="../../img/img/comment.jpg" alt="">&nbsp;已有<span>988</span>条评论</p>
+                            </li>
+                            <li>
+                                <img src="../../img/img/promotion-list1.jpg" alt="">
+                                <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p><img src="../../img/img/comment.jpg" alt="">&nbsp;已有<span>988</span>条评论</p>
+                            </li>
+                            <li>
+                                <img src="../../img/img/promotion-list1.jpg" alt="">
+                                <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p><img src="../../img/img/comment.jpg" alt="">&nbsp;已有<span>988</span>条评论</p>
+                            </li>
+                            <li>
+                                <img src="../../img/img/promotion-list1.jpg" alt="">
+                                <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p><img src="../../img/img/comment.jpg" alt="">&nbsp;已有<span>988</span>条评论</p>
+                            </li>
+                            <li>
+                                <img src="../../img/img/promotion-list1.jpg" alt="">
+                                <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p><img src="../../img/img/comment.jpg" alt="">&nbsp;已有<span>988</span>条评论</p>
+                            </li>
+                        </ul>
+                        <!-- 2 -->
+                        <ul class="fl">
                             <li>
                                 <img src="../../img/img/promotion-list1.jpg" alt="">
                                 <p>Pigeon法国奶嘴，无<br>毒天然乳胶</p>
@@ -1122,12 +1182,24 @@
         </div>
         <p>Copyright&nbsp;&nbsp;(C)&nbsp;&nbsp;乐购网&nbsp;2004-2016.&nbsp;All&nbsp;Rights&nbsp;Reserved</p>
     </div>
+    <!-- 返回顶部 -->
     <!-- 引入jQuery.min.js -->
     <script src="../../js/jquery.min.js "></script>
     <!-- 引入轮播插件 -->
     <script src="../../js/slider.js "></script>
     <!-- 引入自己写的js文件 -->
     <script src="../../js/index.js "></script>
+    <!-- 引入返回顶部的js -->
+    <script src="../../js/gotoTop.js"></script>
+    <script>
+        $(function() {
+            //调用返回顶部函数
+            gotoTop({
+                imgUrl: '../../img/img/gototop_05.jpg',
+                bottom: '100px'
+            });
+        })
+    </script>
 </body>
 
 </html>
