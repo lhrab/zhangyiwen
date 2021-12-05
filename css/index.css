@@ -1446,3 +1446,17 @@
     width: 40px;
     height: 40px;
 }
+
+
+/*=============购物车=========*/
+
+.nav .category-menu .delivery {
+    width: 199px;
+    height: 30px;
+    margin-left: 984px;
+}
+
+.nav .category-menu .delivery select {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+}

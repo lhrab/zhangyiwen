@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>CSS怎么修改表单复选框checkbox的样式</title>
+
+    <style type="text/css">
+        #fxk {
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border: 1px solid #c9c9c9;
+            border-radius: 2px;
+            color: #fff;
+            text-align: center;
+            line-height: 15px;
+            /* -webkit-appearance: none; */
+            appearance: none;
+            /* outline: none; */
+        }
+        
+        #fxk:checked {
+            color: #fff;
+            background-color: #ff6700;
+            border: 1px solid #c9c9c9;
+        }
+        
+        #fxk:after {
+            content: "\2713";
+        }
+    </style>
+
+</head>
+
+<body style="padding: 50px;">
+
+    <input type="checkbox" value="复选框" />
+    <input type="checkbox" value="复选框" id="fxk" />
+
+</body>
+
+</html>
