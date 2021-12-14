@@ -1,0 +1,53 @@
+.ez {
+    height: 500px;
+}
+
+.ez .ez-title {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 6px solid #ff6700;
+    background-color: #fff;
+    color: #ff6700;
+    font-size: 24px;
+    text-indent: 20px;
+}
+
+.ez .ez-title h1 {
+    font-weight: 200;
+}
+
+.ez .ez-title ul li {
+    float: left;
+    width: 100px;
+    font-size: 14px;
+    color: #333;
+}
+
+.ez .ez-title ul li.active {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.ez .ez-content {
+    width: 1200px;
+    height: 500px;
+    /* background-color: green; */
+}
+
+.ez-list {
+    width: 1200px;
+    height: 440px;
+}
+
+.ez-list p {
+    float: left;
+    width: 240px;
+    height: 227px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ez-list p>img {
+    width: 80% !important;
+    height: 80% !important;
+}

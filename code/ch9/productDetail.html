@@ -10,6 +10,8 @@
     <!-- 引入样式 -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/productDetail.css">
+    <link rel="stylesheet" href="../../css/magnifier.css">
 </head>
 
 <body>
@@ -61,6 +63,60 @@
                 <li>电器城</li>
             </ul>
         </div>
+    </div>
+    <!-- 3.产品详情 -->
+    <div class="product-detail container clearfix">
+        <div class="left-box fl">
+            <!-- 放大镜容器 -->
+            <div class="magnifier" id="magnifier1">
+                <div class="magnifier-container">
+                    <div class="images-cover"></div>
+                    <!--当前图片显示容器-->
+                    <div class="move-view"></div>
+                    <!--跟随鼠标移动的盒子-->
+                </div>
+                <div class="magnifier-assembly">
+                    <div class="magnifier-btn">
+                        <span class="magnifier-btn-left">&lt;</span>
+                        <span class="magnifier-btn-right">&gt;</span>
+                    </div>
+                    <!--按钮组-->
+                    <div class="magnifier-line">
+                        <ul class="clearfix animation03">
+                            <li>
+                                <div class="small-img">
+                                    <img src="../../img/img/1.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../../img/img/2.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../../img/img/3.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../../img/img/4.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../../img/img/5.jpg" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--缩略图-->
+                </div>
+                <div class="magnifier-view"></div>
+                <!--经过放大的图片显示容器-->
+            </div>
+        </div>
+        <div class="right-box fr"></div>
     </div>
     <!-- 11.尾部 -->
     <div class="footer">
@@ -131,14 +187,11 @@
         </div>
         <p>Copyright&nbsp;&nbsp;(C)&nbsp;&nbsp;乐购网&nbsp;2004-2016.&nbsp;All&nbsp;Rights&nbsp;Reserved</p>
     </div>
-    <!-- 顶部搜索框 -->
-    <div class="top-search-box">
-        <div class="search-box">
-            <input class="search" placeholder="创意文具" type="text">
-        </div>
-    </div>
     <!-- 引入jQuery.min.js -->
     <script src="../../js/jquery.min.js "></script>
+    <script src="../../js/productDetail.js"></script>
+    <!-- 放大镜js -->
+    <script src="../../js/magnifier.js"></script>
 </body>
 
 </html>
