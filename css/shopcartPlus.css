@@ -19,17 +19,12 @@
     text-align: center;
 }
 
-.shopcart table tbody tr {
-    height: 210px;
-}
-
 .shopcart table thead tr th {
     height: 60px;
     background-color: #f1f1f1;
-}
-
-.shopcart table thead tr th input {
-    border: 1px solid #f1f1f1;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
 }
 
 .shopcart .totalPrice {
@@ -38,9 +33,11 @@
     font-size: 20px;
     background-color: #f1f1f1;
     margin-top: 20px;
+    padding-left: 50px;
 }
 
-.shopcart .totalPrice input {
+
+/* .shopcart .totalPrice input {
     margin-left: 10px;
 }
 
@@ -50,13 +47,31 @@
 
 .shopcart .totalPrice span:first-of-type {
     margin-left: 100px;
-}
+} */
 
-.shopcart table button {
+
+/* input[type=checkbox] {
+    /* visibility: hidden; */
+
+
+/* 
+} */
+
+*/ #input+label {
+    display: block;
     width: 20px;
     height: 20px;
+    cursor: pointer;
+    top: 2px;
+    left: 15px;
+    background: rgba(195, 122, 211, 1);
 }
 
-.shopcart table input {
-    width: 50px;
+#input:checked+label::before {
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background: rgba(195, 122, 211, 1);
 }

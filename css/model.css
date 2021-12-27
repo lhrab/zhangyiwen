@@ -1,0 +1,106 @@
+.model {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* 扩展 */
+    /* 第三种垂直居中方式 */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: none;
+}
+
+.model .content {
+    width: 420px;
+    height: 250px;
+    box-shadow: 3px 3px 5px 5px rgb(85, 83, 83);
+    background-color: #fff;
+    /* 第一种垂直居中方式 */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    /* 第二种垂直居中方式 */
+    /* position: absolute;
+    top: 50%;
+    margin-top: -125px;
+    left: 50%;
+    margin-left: -200px; */
+    /* 第四种垂直居中方式 */
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.model .content .top {
+    width: 100%;
+    height: 39px;
+    background-color: rgb(223, 219, 219);
+}
+
+.model .content .top div:first-child {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.model .content .top div:last-child {
+    margin-right: 10px;
+}
+
+.model .content .con {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+}
+
+.model .content div a {
+    color: rgb(117, 112, 112);
+    text-decoration: none;
+    font-size: 29px;
+}
+
+.model .content .con div:first-child {
+    margin-left: 66px;
+    margin-top: 38px;
+}
+
+.model .content .con div:last-child {
+    margin-top: 58px;
+    margin-left: 10px;
+    font-size: 23px;
+}
+
+.model .content .con div img {
+    width: 70px;
+    height: 70px;
+}
+
+.model .content .bot {
+    margin-left: 51px;
+}
+
+.model .content .bot div {
+    margin-left: 30px;
+}
+
+.model .content .bot div input {
+    width: 110px;
+    height: 30px;
+    font-size: 17px;
+    border: 1px solid rgb(223, 219, 219);
+    background-color: rgb(223, 219, 219);
+    color: rgb(31, 30, 30);
+}
+
+.model .content .bot div:last-child input {
+    border: 1px solid #ff6700;
+    background-color: #ff6700;
+    color: #fff;
+}

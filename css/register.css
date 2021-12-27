@@ -1,0 +1,44 @@
+.register {
+    width: 500px;
+    height: 1000px;
+    margin-top: 40px;
+    margin-left: 25%;
+    margin: 50px auto;
+}
+
+.register h1 {
+    font-size: 24px;
+}
+
+.error {
+    color: red;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+input {
+    width: 350px;
+    height: 40px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(155, 153, 153);
+    padding-left: 120px;
+}
+
+.register div {
+    width: 472px;
+    height: 100px;
+    border: 1px solid rgb(155, 153, 153);
+}
+
+label {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(22, 22, 22);
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 7px;
+}
