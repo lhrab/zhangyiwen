@@ -10,8 +10,6 @@
     <!-- 引入样式 -->
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/model.css">
-    <link rel="stylesheet" href="../../css/shopcartPlus.css">
 </head>
 
 <body>
@@ -29,13 +27,17 @@
     <div class="nav container">
         <!-- 搜索框&购物车&订单 -->
         <div class="search-shopcart-order clearfix">
+            <!-- 购物车&订单 -->
+            <div class="shopcart-order fr">
+                <button>&emsp;&emsp;购物车&emsp;
+                        <span>3</span>
+                  </button>
+                <button>我的订单</button>
+            </div>
             <!-- 搜索框 -->
             <div class="search-input fr">
                 <input class="search" placeholder="创意文具" type="text">
                 <span></span>
-                <p class="fr">
-                    配送到 <select><option>成都高新区三环内</option><option>成都郫都区五环内</option></select>
-                </p>
             </div>
         </div>
         <!-- 分类导航 -->
@@ -44,90 +46,20 @@
             <div class="left-logo fl">
                 <img src="../../img/img/logo.jpg" alt="">
             </div>
-        </div>
-    </div>
-    <!-- 购物车 -->
-    <div class="shopcart container">
-        <!-- 全部商品 -->
-        <h3>全部商品（<span class="count">0</span>）</h3>
-        <!-- 表格 -->
-        <table>
-            <!-- 表头 -->
-            <thead>
-                <tr>
-                    <th><input type="checkbox" /> 全选</th>
-                    <th>商品</th>
-                    <th>单价</th>
-                    <th>数量</th>
-                    <th>小计</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <!-- 身体 -->
-            <tbody>
-                <tr class="HR">
-                    <td colspan="6">
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" /><img src="../../img/img/ebooks.jpg" alt="" class="book"></td>
-                    <td>从你的全世界路过</td>
-                    <td class="price">41.00</td>
-                    <td>
-                        <button class="add">+</button>
-                        <input type="text" value="1">
-                        <button class="reduce">-</button>
-                    </td>
-                    <td class="subprice">41.00</td>
-                    <td class="del">
-                        <p>删除</p>
-                        <p>移到我的关注</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" /><img src="../../img/img/ebooks.jpg" alt="" class="book"></td>
-                    <td>从你的全世界路过</td>
-                    <td class="price">11.00</td>
-                    <td>
-                        <button class="add">+</button>
-                        <input type="text" value="1">
-                        <button class="reduce">-</button>
-                    </td>
-                    <td class="subprice">11.00</td>
-                    <td class="del">
-                        <p>删除</p>
-                        <p>移到我的关注</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- 计算总价 -->
-        <div class="totalPrice container">
-            <div class="fl"><input type="checkbox" /> 全选</div>
-            <div class="fl"><span class="deleteChecked">删除选中商品</span></div>
-            <div class="btn fr"><button id="btn">去结算</button></span>
-            </div>
-            <div class="tota fr"><span>总价 <span class="total">00.00</span></span>
-            </div>
-            <div class="cou fr"><span>已选择 <span class="count">&nbsp;0&nbsp;</span> 件商品</div>
-        </div>
-    </div>
-    <!-- 蒙层 -->
-    <div class="model">
-        <div class="content">
-            <div class="top">
-                <div class="fl">确认付款</div>
-                <div class="fr"><a href="#" id="close">x</a></div>
-            </div>
-            <div class="con">
-                <div class="fl"><img src="../../img/model-img.png" alt=""></div>
-                <div class="fl">是否去付款中心付款？</div>
-            </div>
-            <div class="bot">
-                <div class="fl"><input type="button" value="取消" id="cancel"></div>
-                <div class="fl"><input type="button" value="去付款" id="pay"></div>
-            </div>
+            <!-- 右侧 -->
+            <ul class="fr clearfix">
+                <li>图书</li>
+                <li>电子书</li>
+                <li>原创文学</li>
+                <li>服装</li>
+                <li>运动户外</li>
+                <li>孕婴童</li>
+                <li>家居</li>
+                <li>创意文具</li>
+                <li>地方特产</li>
+                <li>海外购</li>
+                <li>电器城</li>
+            </ul>
         </div>
     </div>
     <!-- 11.尾部 -->
@@ -199,10 +131,14 @@
         </div>
         <p>Copyright&nbsp;&nbsp;(C)&nbsp;&nbsp;乐购网&nbsp;2004-2016.&nbsp;All&nbsp;Rights&nbsp;Reserved</p>
     </div>
+    <!-- 顶部搜索框 -->
+    <div class="top-search-box">
+        <div class="search-box">
+            <input class="search" placeholder="创意文具" type="text">
+        </div>
+    </div>
     <!-- 引入jQuery.min.js -->
     <script src="../../js/jquery.min.js "></script>
-    <script src="../../js/model.js"></script>
-    <script src="../../js/shopcartPlus.js"></script>
 </body>
 
 </html>

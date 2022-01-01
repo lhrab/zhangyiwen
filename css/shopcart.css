@@ -3,7 +3,7 @@
 .shopcart {
     height: auto;
     margin-top: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 .shopcart h3 {
@@ -19,44 +19,150 @@
     text-align: center;
 }
 
-.shopcart table tbody tr {
-    height: 210px;
+.shopcart table tbody tr:not(:first-child) {
+    height: 180px;
+    border-bottom: 1px solid #bdbcbc;
+    font-size: 15px;
 }
 
 .shopcart table thead tr th {
     height: 60px;
     background-color: #f1f1f1;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
 }
 
-.shopcart table thead tr th input {
-    border: 1px solid #f1f1f1;
+.shopcart table thead tr th:first-child {
+    text-align: left;
+    width: 300px;
+    padding-left: 20px;
 }
 
-.shopcart .totalPrice {
+.shopcart table tbody tr td:first-child {
+    text-align: left;
+    width: 350px;
+}
+
+.book {
+    padding-left: 70px;
+}
+
+.shopcart table thead tr th:nth-child(2) {
+    text-align: left;
+}
+
+.shopcart table tbody tr td:nth-child(2) {
+    text-align: left;
+}
+
+.shopcart table thead tr th:nth-child(4) {
+    width: 200px;
+}
+
+.shopcart table thead tr th:nth-child(5) {
+    width: 200px;
+}
+
+.shopcart table thead tr th:last-child {
+    width: 100px;
+    text-align: left;
+}
+
+.shopcart table tbody tr td:last-child {
+    width: 130px;
+    text-align: left;
+}
+
+.HR {
+    height: 30px;
+    border-bottom: none;
+}
+
+hr {
+    border: 2px solid #bdbcbc;
+    width: 1200px;
+}
+
+.shopcart table tbody tr th .shopcart .totalPrice {
     height: 60px;
     line-height: 60px;
     font-size: 20px;
     background-color: #f1f1f1;
     margin-top: 20px;
+    padding-left: 50px;
 }
 
-.shopcart .totalPrice input {
-    margin-left: 10px;
-}
-
-.shopcart .totalPrice span {
-    margin-right: 100px;
-}
-
-.shopcart .totalPrice span:first-of-type {
-    margin-left: 100px;
-}
-
-.shopcart table button {
-    width: 20px;
-    height: 20px;
-}
-
-.shopcart table input {
+td input {
     width: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.add {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ccc;
+}
+
+.reduce {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ccc;
+}
+
+.shopcart .totalPrice {
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 17px;
+    color: #333;
+    background-color: #fff;
+    margin-top: 20px;
+    border: 1px solid #bdbcbc;
+    padding-left: 4px;
+}
+
+.shopcart .totalPrice div:first-child {
+    margin-left: 20px;
+}
+
+#btn {
+    height: 60px;
+    width: 120px;
+    background-color: #ff6700;
+    border: 1px solid #ff6700;
+    color: #fff;
+}
+
+.tota {
+    margin-right: 70px;
+    color: #000;
+    font-size: 19px;
+}
+
+.tota .total {
+    color: #ff5700;
+    font-size: 19px;
+}
+
+.cou {
+    margin-right: 130px;
+}
+
+.cou .count {
+    color: #ff5700;
+    font-size: 19px;
+}
+
+.deleteChecked {
+    padding-left: 50px;
+}
+
+.search-input p {
+    padding-top: 20px;
+}
+
+select {
+    border: 1px solid #f1f1f1;
 }

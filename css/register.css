@@ -1,6 +1,6 @@
 .register {
     width: 500px;
-    height: 1000px;
+    height: 563px;
     margin-top: 40px;
     margin-left: 25%;
     margin: 50px auto;
@@ -40,4 +40,53 @@ label {
     position: absolute;
     margin-left: 10px;
     margin-top: 7px;
+}
+
+.re {
+    width: 465px;
+    text-align: center;
+    background-color: #ff6700;
+    padding-left: 0px;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #ff6700;
+}
+
+.category-menu {
+    width: 100%;
+    box-shadow: 10px 10px 10px #ccc;
+}
+
+.left-logo {
+    margin-left: 141px;
+}
+
+.left-logo img {
+    height: 115px;
+}
+
+.nav .category-menu ul li {
+    font-size: 30px;
+    width: 150px;
+    font-weight: 500;
+}
+
+.regi {
+    font-size: 19px;
+    margin-right: 98px;
+    color: rgb(172, 170, 170);
+}
+
+.regi a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav .category-menu ul {
+    margin-top: -30px;
+}
+
+.topbar .container p:first-child a {
+    padding-left: 64px;
 }

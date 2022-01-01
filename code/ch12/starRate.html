@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手写星星评分</title>
+    <!-- iconfont.css -->
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="../../css/starRate.css">
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <!-- jquery.min.js -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/starRate.js"></script>
+    <script>
+        $(function() {
+            var star1 = createStarRate(3);
+            $('.box1').html(star1);
+            var star2 = createStarRate(2.5);
+            $('.box2').html(star2);
+            var star3 = createStarRate(2.3);
+            $('.box3').html(star3);
+            //扩展
+            // $('.box1').createStarRate(3);
+        })
+    </script>
+</body>
+
+</html>
